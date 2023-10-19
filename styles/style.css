@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-  display: flex;
   margin: auto;
   padding: 133px 30px;
   color: #fff;
@@ -54,7 +53,8 @@ ol {
   grid-template-columns: auto 399px;
   grid-template-areas: "result details";
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  align-content: center;
   gap: 30px;
 }
 
