@@ -9,10 +9,11 @@ html {
 }
 
 .page {
+  display: flex;
   margin: auto;
   padding: 133px 30px;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -52,9 +53,9 @@ ol {
   display: grid;
   grid-template-columns: auto 399px;
   grid-template-areas: "result details";
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  margin: auto;
 }
 
 .result {
@@ -62,6 +63,7 @@ ol {
   flex-direction: column;
   grid-area: result;
   gap: 16px;
+  align-self: flex-end;
 }
 
 .result__video-container {
@@ -146,15 +148,15 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid white;
+  padding: 1px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after,
 .search-form__checkbox:active + .search-form__pseudo-checkbox::after {
-  content: '';
-  position: absolute;
+  content: "";
+  display: block;
   width: 15px;
   height: 15px;
-  margin: 1px;
   background-color: white;
 }
 
@@ -162,7 +164,7 @@ ol {
   border: 1px solid white;
   padding: 6px 73.5px;
   color: white;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background-color: transparent;
