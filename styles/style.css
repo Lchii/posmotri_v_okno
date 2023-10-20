@@ -196,6 +196,7 @@ ol {
 
 .content__details {
   grid-area: details;
+  min-width: 399px;
 }
 
 .title {
